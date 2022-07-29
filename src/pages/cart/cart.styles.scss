@@ -1,0 +1,59 @@
+@import "../../theme/main.scss";
+@import "../homepage/homepage.styles.scss";
+
+.cart-text{
+    font-size: 2.4rem;
+}
+.cart-image-box {
+    background-size: contain;
+}
+
+.cart-image{
+    width: 50%;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    object-fit: contain;
+}
+.cart-box-text {
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    color: $color-grey-dark-3;
+    
+}
+.cart-qty{
+    padding: 3rem 10rem;
+}
+
+.qty-button {
+    padding: 1rem;
+    border: none;
+    font-size: 1.7rem;
+    background-color: $color-grey-light-2;
+    &:hover{
+        background-color: $color-tertiary-light;
+    }
+    &:active {
+        background-color: $color-tertiary-dark;
+    }
+}
+
+.qty-box{
+    border: 0.1rem solid black;
+    padding: .7rem 2rem;
+    transform: translate(0%,0%);
+    &__text{
+        font-size: 2rem;
+    }
+}
+
+.price-text{
+    font-size: 2rem;
+    span{
+        text-align: end;
+        color: green;
+    }
+}
+.button-container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}

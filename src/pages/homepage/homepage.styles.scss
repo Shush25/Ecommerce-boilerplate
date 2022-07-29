@@ -1,0 +1,77 @@
+@import "../../theme/main.scss";
+.homepage{
+    margin-top: 4rem;
+}
+.card-box {
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition: transform .3s;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
+    &__image-box {
+        display: inline-block;
+        position: relative;
+        background-size: contain;
+    
+        &__image{
+            width: 100%;
+            overflow: hidden;
+            aspect-ratio: 9/16;
+            object-fit: contain;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        font-size: small;
+        &--green-bg span {
+            background-color: green;
+            padding: 0 .2rem;
+            color: white;
+            overflow: hidden;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+    &--no-hover{
+        
+        &:hover{
+            transform: none;
+        }
+    }
+
+    .icon{
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: -1.4rem;
+        .fav-icon{
+            color: $color-grey-dark;
+            width: 90%;
+
+            &--select{
+                color: $color-secondary-light;
+            }
+        }
+        .cart-icon {
+            color: $color-grey-dark;
+            &:hover{
+                color: $color-grey-dark-3;
+                
+            }
+            &:active{
+                color: $color-secondary-dark;
+            }
+        }
+    }
+}

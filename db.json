@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "email": "name@mail.com",
+      "password": "$2a$10$OFTOihnnNAICbqGgBndrBOrayEeWaRZE52tGdgq7Kl/6tzrz.PrXi",
+      "firstname": "firstname",
+      "lastname": "lastname",
+      "id": 1
+    },
+    {
+      "email": "shushant.kumar.singh.5@gmail.com",
+      "password": "$2a$10$249cMn/X0XnPszDcalyy4O6ard5qrHdHOIZtIEDbHU/wKyALaBXZu",
+      "firstname": "Shushant",
+      "lastname": "Singh",
+      "id": 2
+    },
+    {
+      "email": "shushant.kumar.singh.5@gmail.co",
+      "password": "$2a$10$iWMOp/.fUJtJZ8rzEWOfgubDcL/3dv8sk4qcsHt5hGC7nWb08pjMK",
+      "firstname": "Shushant",
+      "lastname": "Singh",
+      "id": 3
+    },
+    {
+      "email": "shushant.kumar.singh@gmail.com",
+      "password": "$2a$10$/PVnUTGv1mvis6Uuzxl5luplUJ5Ro8BxJDhj32Tcn6L5DL3ROtBMG",
+      "firstname": "Shushant",
+      "lastname": "Singh",
+      "id": 4
+    },
+    {
+      "email": "apoorv.yadav@gmail.com",
+      "password": "$2a$10$rvx.OwauJXqsgufKvWoFkORM4z7X9Z06Q/CPDBiIv9w66.CWHp3Dm",
+      "firstname": "Apoorv",
+      "lastname": "Yadav",
+      "id": 5
+    },
+    {
+      "email": "s@gmail.com",
+      "password": "$2a$10$KEgGz/Q/9UdP5w.rBNdZJuLZe1YouxzQ35SUp5ao4QDJL2ataWfdC",
+      "firstname": "shush",
+      "lastname": "sss",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+      "amount": "200",
+      "rating": "4.0"
+    },
+    {
+      "id": 2,
+      "title": "RodZen - Men's Cotton Half Sleeve Regular Fit Striped T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/b9/83/a7/b983a7e4e9a4a05ee8ae8333f1c7b2d8.jpg",
+      "amount": "300",
+      "rating": "4.0"
+    },
+    {
+      "id": 3,
+      "title": "U.S. POLO ASSN - Men's Solid Regular Fit Cotton Polo",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/55/82/bc/5582bc23ad7619f10f09d10141e7a6b9.jpg",
+      "amount": "400",
+      "rating": "4.0"
+    },
+    {
+      "id": 4,
+      "title": "Jockey - Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/26/ee/90/26ee903549b8b69635152f5db58264b2.jpg",
+      "amount": "350",
+      "rating": "4.0"
+    },
+    {
+      "id": 5,
+      "title": "Max Men's Slim Polo",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/5a/cc/7f/5acc7f5af23bee76168f0f1fd24c75b4.jpg",
+      "amount": "400",
+      "rating": "4.0"
+    },
+    {
+      "id": 6,
+      "title": "Jockey Men's Cotton T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/7f/c0/84/7fc084dbec9b6c0ce19ab73b25bcba7f.jpg",
+      "amount": "600",
+      "rating": "4.0"
+    },
+    {
+      "id": 7,
+      "title": "AMERICAN CREW - Men's Regular Fit Polos",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+      "amount": "300",
+      "rating": "4.0"
+    },
+    {
+      "id": 8,
+      "title": "Scott International Men's Regular Fit T-Shirt (Pack of 3)",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/b9/83/a7/b983a7e4e9a4a05ee8ae8333f1c7b2d8.jpg",
+      "amount": "100",
+      "rating": "4.0"
+    },
+    {
+      "id": 9,
+      "title": "AELOMART Men's T Shirt-(Amt250105-P_Green)",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/55/82/bc/5582bc23ad7619f10f09d10141e7a6b9.jpg",
+      "amount": "300",
+      "rating": "4.0"
+    },
+    {
+      "id": 10,
+      "title": "F GALLERY Printed Round Neck Half Sleeve T-Shirts for Men",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/26/ee/90/26ee903549b8b69635152f5db58264b2.jpg",
+      "amount": "500",
+      "rating": "4.0"
+    },
+    {
+      "id": 11,
+      "title": "Jockey Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/5a/cc/7f/5acc7f5af23bee76168f0f1fd24c75b4.jpg",
+      "amount": "700",
+      "rating": "4.0"
+    },
+    {
+      "id": 12,
+      "title": "fanideaz - Mens Cotton Half Sleeve Striped Polo T Shirt with Collar",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us.",
+      "image": "https://i.pinimg.com/564x/7f/c0/84/7fc084dbec9b6c0ce19ab73b25bcba7f.jpg",
+      "amount": "100",
+      "rating": "4.0"
+    }
+  ],
+  "orders": [
+    {
+      "productId": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "userId": 2,
+      "total-amount": 1550,
+      "id": 1
+    },
+    {
+      "productId": [
+        2,
+        1
+      ],
+      "userId": 2,
+      "total-amount": 500,
+      "id": 2
+    },
+    {
+      "productId": [
+        11,
+        10
+      ],
+      "userId": 2,
+      "total-amount": 1900,
+      "id": 3
+    },
+    {
+      "productId": [
+        3
+      ],
+      "userId": 2,
+      "total-amount": 800,
+      "id": 4
+    },
+    {
+      "productId": [
+        3,
+        2,
+        1
+      ],
+      "userId": 2,
+      "total-amount": 3000,
+      "id": 5
+    }
+  ],
+  "favourites": [
+    {
+      "favouriteList": [],
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "favouriteList": [
+        3
+      ],
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "favouriteList": [
+        3,
+        4
+      ],
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "favouriteList": [
+        3,
+        4,
+        2
+      ],
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "favouriteList": [],
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "favouriteList": [
+        2
+      ],
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "favouriteList": [
+        2,
+        1
+      ],
+      "userId": 2,
+      "id": 7
+    }
+  ]
+}
