@@ -205,6 +205,15 @@
       "userId": 2,
       "total-amount": 350,
       "id": 7
+    },
+    {
+      "productId": [
+        1,
+        2
+      ],
+      "userId": 1,
+      "total-amount": 1000,
+      "id": 8
     }
   ],
   "favourites": [
@@ -261,6 +270,16 @@
       "favouriteList": [],
       "userId": 2,
       "id": 8
+    },
+    {
+      "favouriteList": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "userId": 1,
+      "id": 9
     }
   ]
 }
