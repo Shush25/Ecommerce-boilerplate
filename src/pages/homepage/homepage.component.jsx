@@ -17,7 +17,7 @@ const HomePage = () => {
 
   const PostFavourite = () => {
     axios
-      .post("http://localhost:5000/favourites", {
+      .post("https://shush-assignment-1.herokuapp.com/favourites", {
         favouriteList: fav,
         userId: currentUser.id,
       })

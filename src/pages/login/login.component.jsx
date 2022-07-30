@@ -18,7 +18,7 @@ const LoginPage = () => {
 
   const LoginCheck = () => {
     axios
-      .post("http://localhost:5000/login", {
+      .post("https://shush-assignment-1.herokuapp.com/login", {
         email: email,
         password: password,
       })

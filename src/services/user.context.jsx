@@ -6,7 +6,7 @@ export const UsersContextProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
   const fetchUser = () => {
-    fetch("http://localhost:5000/users")
+    fetch("https://shush-assignment-1.herokuapp.com/users")
       .then((res) => res.json())
       .then((result) => {
         setUsers(result);

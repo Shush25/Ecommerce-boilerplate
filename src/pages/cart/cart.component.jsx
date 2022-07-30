@@ -15,7 +15,7 @@ const CartPage = () => {
   const [error, setError] = useState(null);
 
   const getItemById = (id) => {
-    fetch("http://localhost:5000/products/" + id)
+    fetch("https://shush-assignment-1.herokuapp.com/products/" + id)
       .then((res) => res.json())
       .then((result) => {
         setCost((prevState) => prevState + Number(result.amount));
@@ -39,7 +39,7 @@ const CartPage = () => {
 
   const PlaceOrder = () => {
     axios
-      .post("http://localhost:5000/orders", {
+      .post("https://shush-assignment-1.herokuapp.com/orders", {
         productId: item,
         userId: currentUser.id,
         "total-amount": cost,

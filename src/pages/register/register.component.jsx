@@ -17,7 +17,7 @@ const RegisterPage = () => {
 
   const RegisterUser = () => {
     axios
-      .post("http://localhost:5000/register", {
+      .post("https://shush-assignment-1.herokuapp.com/register", {
         email: email,
         password: password,
         firstname: firstName,
