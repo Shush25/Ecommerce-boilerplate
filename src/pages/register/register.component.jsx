@@ -15,6 +15,8 @@ const RegisterPage = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
+  /* Function to Register Users called when button is pressed note onpress enter is not handled */
+
   const RegisterUser = () => {
     axios
       .post("https://shush-assignment-1.herokuapp.com/register", {

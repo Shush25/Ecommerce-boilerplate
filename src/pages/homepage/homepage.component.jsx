@@ -15,6 +15,8 @@ const HomePage = () => {
   const [fav, setFav] = useState([]);
   const [error, setError] = useState(null);
 
+  /* When a user clicks on the favourite icon it gets pushed into the database via API */
+
   const PostFavourite = () => {
     axios
       .post("https://shush-assignment-1.herokuapp.com/favourites", {
@@ -34,6 +36,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="row">
+        {/* Populating the cards in homepage based on total number of products fetched from the api */}
         {products.map((product) => {
           return (
             <div className="col-1-of-5 col-1-of-5--margin">
@@ -53,6 +56,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="icon">
+                  {/* For toggling favourite icon color when selected. */}
                   {fav.find((obj) => {
                     return obj === product.id;
                   }) ? (
@@ -80,6 +84,7 @@ const HomePage = () => {
                       </h2>
                     </div>
                   )}
+                  {/* When a new Item is added by clicking on the cart icon it add into the products array but only unique elements are added */}
                   <div
                     className="cart-icon"
                     onClick={() => {

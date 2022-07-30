@@ -17,13 +17,18 @@ function App() {
   return (
     <div>
       <ProductsContextProvider>
+        {" "}
+        {/* A context which provides products array to the whole application */}
         <CartContextProvider>
+          {" "}
+          {/* Items Stored in cart are handled with this context provider */}
           <Header />
           <Routes>
             <Route
               path="/"
               element={currentUser ? <HomePage /> : <LoginPage />}
             />
+            {/* Homepage only accessible if the user has already logged in same or vice versa for all other routes */}
             <Route
               path="/login"
               element={currentUser ? <HomePage /> : <LoginPage />}

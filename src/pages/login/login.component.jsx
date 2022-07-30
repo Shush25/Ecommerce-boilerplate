@@ -16,6 +16,8 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  /* Checks if the User is present in the db if he does sets the currentUser to the user making other pages accessible */
+
   const LoginCheck = () => {
     axios
       .post("https://shush-assignment-1.herokuapp.com/login", {

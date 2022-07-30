@@ -11,6 +11,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <UsersContextProvider>
+        {" "}
+        {/* User Context declared here so other routes can use user current state to handle navigations */}
         <App />
       </UsersContextProvider>
     </BrowserRouter>

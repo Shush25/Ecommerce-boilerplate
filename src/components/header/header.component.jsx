@@ -18,6 +18,7 @@ const Header = () => {
       <Link className="header__product-text" to="/">
         Products
       </Link>
+      {/* If current user are present then show logout button otherwise show login button */}
       {currentUser ? (
         <button
           onClick={() => {

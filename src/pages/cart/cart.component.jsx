@@ -14,6 +14,8 @@ const CartPage = () => {
   const [cost, setCost] = useState(0);
   const [error, setError] = useState(null);
 
+  /* Get the items by there id which we got through the homepage via contexts and fetch all the details of these items also adding a new field qty to store the quantity. */
+
   const getItemById = (id) => {
     fetch("https://shush-assignment-1.herokuapp.com/products/" + id)
       .then((res) => res.json())
@@ -25,6 +27,7 @@ const CartPage = () => {
       });
   };
   const effectRan = useRef(false);
+  /* With effectRan we make sure that the items gets added only once to the cart as useEffects runs twice due to strict mode */
   useEffect(() => {
     if (effectRan.current === false) {
       setProducts([]);
@@ -36,6 +39,8 @@ const CartPage = () => {
       effectRan.current = true;
     };
   }, [item]);
+
+  /* By clicking on placing order post api request is made and if successful it is promted that the order was successful */
 
   const PlaceOrder = () => {
     axios
@@ -54,6 +59,7 @@ const CartPage = () => {
       });
   };
 
+  /* The two functions handles the incrementation and decrementation of the quantity of products if it hits 0 the item is removed both from the item array and the product arrray */
   const handleDecrement = (p) => {
     setCost((prevState) => prevState - Number(p.amount));
     let pd = products.find((pr) => pr.id === p.id);
@@ -68,7 +74,7 @@ const CartPage = () => {
       removeObj(pd);
     }
   };
-
+  /* For removing items and product should have made a single reusable function but time constraint*/
   const removeObj = (p) => {
     let pd = products.find((pr) => pr.id === p.id);
     const updateProducts = products.filter((p) => {
@@ -154,6 +160,7 @@ const CartPage = () => {
           </div>
           <div className="button-container">
             <div className="order-button">
+              {/* Once the order is placed the arrays are flushed empty */}
               <CustomButton
                 label={"PLACE ORDER"}
                 onClick={() => {
