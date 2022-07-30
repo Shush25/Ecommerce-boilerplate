@@ -3,6 +3,9 @@
 
 .cart-text{
     font-size: 2.4rem;
+    &--price {
+        margin-bottom: 2.4rem;
+    }
 }
 .cart-image-box {
     background-size: contain;
@@ -48,12 +51,16 @@
 
 .price-text{
     font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
     span{
         text-align: end;
-        color: green;
     }
 }
 .button-container {
     margin-top: 2rem;
     margin-bottom: 3rem;
+}
+hr {
+    margin: 1.7rem 0rem;
 }

@@ -177,15 +177,18 @@ const CartPage = () => {
             <div className="card-box">
               <div className="cart-text cart-text--price">Price Details</div>
               <div className="price-text">
-                Price: <span>{cost}</span>
+                <span>Price:</span> <span>{cost}</span>
               </div>
               <div className="price-text">
-                Discount Price: <span>100</span>
+                <span>Discount Price:</span> <span>100</span>
               </div>
               <div className="price-text">
-                Delivery Cost: <span>50</span>
+                <span>Delivery Cost:</span> <span>50</span>
               </div>
-              <div className="price-text">Total {cost - 50}</div>
+              <hr />
+              <div className="price-text">
+                <span>Total</span> <span>{cost - 50}</span>
+              </div>
             </div>
           ) : (
             <></>
