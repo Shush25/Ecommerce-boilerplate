@@ -2,80 +2,50 @@
 
 ## Overview
 
-To complete this assessment, you will need to use this [Ecommerce-boilerplate](https://github.com/gurukishore111/Ecommerce-boilerplate) web app.
+The Page is hosted at: (https://shush25.github.io/Ecommerce-boilerplate/).
+The Server is hosted in Heroku at: (https://shush-assignment-1.herokuapp.com/)
 
-The purpose of this assessment is to assess your **skills and approach to composing a simple web app** given an API feed.
+The App was build while also taking mobile view in consideration. So, it will not be 100% mobile friendly but enough to get the job done.
 
-## What to do?
+![image](https://user-images.githubusercontent.com/61841380/181870989-ef217492-099f-4582-b81f-a8f32a91e22e.png)
 
-Your goal is to implement an eCommerce application. The CSS framework/library is totally up to you.
+This is a screenshot of The landing page which is login. Only Login and Register Pages are accessible at the start. Until the user is authenticated they will not be allowed to view other pages.
 
-Although it's a very basic exercise, we will be looking for simple, well-designed, well-commented, and tested code in the submission.
+![image](https://user-images.githubusercontent.com/61841380/181871025-4b896f5f-6ae8-4816-8f8c-d59e806ff7ad.png)
 
-Please include a `README` with setup instructions and any other documentation you created as part of your solution.
+This is the Register Page, both the Login and Register Pages are fully functioning with user authentication done using REST API hosted on herokuapp. 
+Please make sure to manually click on the button since, enter key was not handled.
+Only after gettting a positive message from api of users existence in db will they be allowed to enter into the homepage. The userd Unique Id is stored via context. Now, until the user logs out they will not be allowed to access the login page. 
 
-Also, add very short info for the following to your `README`:
+In the HomePage the products in our data is spredout and show in the form of cards with there respective image, title and price. One can add them into there cart by clicking on the card icon on the right hand corner. 
 
-- Describe all the application functionalities
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
+One item can only be added once into the cart. Further clicking will not show any changes...
+If a user wants to set the quantity they wanna buy then they can navigate to cart to set the required quantity.
 
-Once you complete implementation, please add the link to the hosted repository (e.g. Github). Alternatively, you may submit your code as a ZIP file too.
+The cart icon on the top also displays the number of unique producted added to the cart.
 
-(NOTE: You have to use the latest version of v18 and react-router-dom v6)
+![image](https://user-images.githubusercontent.com/61841380/181871275-5f71bab2-1f07-4022-a78d-9d60a9e63aed.png)
 
-## How should the application work?
 
-The user of this react application should be able to view all the products. The application should have the following workflow,
+On clicking on the Faviourite Icon one can add then to there faviourite list which is maintained in the db using POST request. The removal of favourites and all time display was not implemented due to time constraint
 
-1. Create the login/register functionality.
-2. Once the user is authenticated
-3. Users can add the products to the cart page
-4. Also user can add their favourite products
+Cart Page Shows the Total Cost along with total number of Items in the cart with there respective quantities.
 
-## Development Setup
+![image](https://user-images.githubusercontent.com/61841380/181871306-d01c7c76-3fe8-4242-a660-d4a9b2201114.png)
 
-- Clone this repo
-- `npm install` - To install the dependencies
-- `npm run server` - To start the JSON server
-- `npm start` - To start the react app
+Once, the quantity of an item hits 0 it is removed from the cart list. The total cost incurd can be seen on the right hand side. The designing of Price Details is not fully completed.
 
-## This project's user interface should like this.
+After user clicks on Place Order button an API request is sent to the server and if gets successful the order is placed otherwise the user has to try again.
+
+![image](https://user-images.githubusercontent.com/61841380/181871372-724615be-2c90-4105-b791-39871a76a4ee.png)
+
+After the order is placed it gets recorded in the db. At the same time the cart is flushed and only the Price Details remains so that user can see the total cost incurred.
+
+On pressing the logout button the user state is set to null causing the user to get redirected back to the login Page.
+
+
 
 ### Login/Register page
 
 <img width="1512" alt="Screenshot 2022-07-24 at 10 44 13 AM" src="https://user-images.githubusercontent.com/52570524/180701451-5ccce009-0384-426c-b1bc-d7536fd7b142.png">
 
-### Home page
-
-<img width="1512" alt="Screenshot 2022-07-24 at 10 45 58 AM" src="https://user-images.githubusercontent.com/52570524/180701523-b679c753-68ff-47f1-9a1b-f4cc04d88fea.png">
-
-### Product detail page
-
-<img width="675" alt="Screenshot 2022-07-24 at 10 53 17 AM" src="https://user-images.githubusercontent.com/52570524/180701655-7c3d3120-ff81-445a-81d9-b2152db8a776.png">
-
-### Cart page
-
-<img width="1415" alt="Screenshot 2022-07-24 at 10 50 18 AM" src="https://user-images.githubusercontent.com/52570524/180701661-a587033d-4616-40f8-9260-dfd3e8b97152.png">
-
-<img width="1472" alt="Screenshot 2022-07-24 at 10 51 16 AM" src="https://user-images.githubusercontent.com/52570524/180701674-31c7e11c-56b3-4f24-83c4-e9d582c4b3f8.png">
-
-## API Usage
-
-API can be launched using npm run server.
-| Endpoint | Result |
-|------------------------------|-----------------------------------------------------|
-| /users | Lists all available users |
-| /products | Lists all available products |
-| /orders | Lists all available orders  
-| /favourites | Lists all available favourites
-
-More info about API usage can be found at the [Postman Collection](https://www.getpostman.com/collections/9f28d57ae334429e1f1f)
-
-## Bonus
-
-- Feel free to add functionality (not mandatory)
-- Use redux/context for state management
-- Well explained readme (screenshot etc)
-
----
